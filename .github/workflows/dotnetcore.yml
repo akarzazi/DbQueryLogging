@@ -1,4 +1,4 @@
-name: Build & Tests 
+name: .NET Core
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
 
-    - name: Run a one-line script
+    - name: Run a one-line script Build & Test
       run: .\build.ps1 -RunTest
       shell: pwsh
       

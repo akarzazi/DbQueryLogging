@@ -6,7 +6,7 @@ A simple wrapper on DbConnection and DbCommand that logs SQL statements into an 
 # Nuget Package
 .Net Standard 2.0
 
-
+https://www.nuget.org/packages/DbQueryLogging/
 
 
 # Usage
