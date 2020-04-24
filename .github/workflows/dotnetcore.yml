@@ -3,13 +3,8 @@ name: .NET Core
 on:
   push:
     branches: [ master ]
-    paths: 
-      - '!README.md'
-        
   pull_request:
-    branches: [ master ]  
-    paths: 
-      - '!README.md'
+    branches: [ master ]
 
 jobs:
   build:
