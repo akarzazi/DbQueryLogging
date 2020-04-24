@@ -24,6 +24,6 @@ jobs:
         dotnet-version: 3.1.101
 
     - name: Run a one-line script
-      run: .\MyScripts\install.ps1
+      run: .\build.ps1 -RunTest
       shell: pwsh
       
