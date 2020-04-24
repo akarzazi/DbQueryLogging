@@ -1,12 +1,10 @@
-name: .NET Core Build/Test
+name: Build & Tests 
 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  watch:
-    types: [started]
 
 jobs:
   build:
