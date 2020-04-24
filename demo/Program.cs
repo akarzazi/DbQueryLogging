@@ -17,10 +17,11 @@ namespace Demo
             connection.Open();
 
             var queryCommand = connection.CreateCommand();
-            queryCommand.CommandText = "SELECT @textParameter, @intParameter, 'constant sample'";
-            var param1 = new SqliteParameter("@textParameter", "SomeText");
-            var param2 = new SqliteParameter("@intParameter", 28);
-            queryCommand.Parameters.AddRange(new[] { param1, param2 });
+            queryCommand.CommandText = "SELECT @name, @age";
+            queryCommand.Parameters.AddRange(new[] {
+                    new SqliteParameter("@name", "Bob"),
+                    new SqliteParameter("@age", 28)
+                });
             var result = queryCommand.ExecuteScalar();
         }
 

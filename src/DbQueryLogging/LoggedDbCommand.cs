@@ -41,15 +41,15 @@ namespace DbQueryLogging
         private string BuildSqlStatement()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"CommandType: {CommandType}");
-            sb.AppendLine($"CommandText: {CommandText}");
+            sb.AppendLine($"- CommandType {CommandType}");
+            sb.AppendLine($"- CommandText {CommandText}");
 
             if (Parameters.Count > 0)
-                sb.AppendLine("Parameters:");
+                sb.AppendLine("- Parameters");
 
             foreach (IDataParameter parameter in Parameters)
             {
-                sb.AppendLine($"{parameter.ParameterName} = {parameter.Value}");
+                sb.AppendLine($"\t{parameter.ParameterName} = {parameter.Value}");
             }
             return sb.ToString();
         }
