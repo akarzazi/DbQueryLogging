@@ -1,7 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
     <RootNamespace>DbQueryLogging</RootNamespace>
     <PackageDescription>A simple wrapper on DbConnection and DbCommand that logs SQL statements into an ILogger instance.</PackageDescription>
     <RepositoryUrl>https://github.com/akarzazi/DbQueryLogging</RepositoryUrl>
@@ -13,6 +16,8 @@
     <Authors>Adel Karzazi</Authors>
     <Product />
     <Company />
+    <PackageTags>DbCommand DbConnection database ILogger log logging</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
