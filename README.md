@@ -4,7 +4,7 @@ A simple wrapper on DbConnection and DbCommand that logs SQL statements into an 
 ![.NET Core](https://github.com/akarzazi/DbQueryLogging/workflows/.NET%20Core/badge.svg)
 
 # Nuget Package
-.Net Standard 2.0
+.Net Standard 2.1
 
 https://www.nuget.org/packages/DbQueryLogging/
 
@@ -23,6 +23,10 @@ DbConnection : ```System.Data.Common.DbConnection```
 ILogger : ```Microsoft.Extensions.Logging.ILogger```
 
 # Demo sample
+
+A sample demo project is also available in the sources at :
+https://github.com/akarzazi/DbQueryLogging/tree/master/demo
+
 
 ```csharp
 using System;
